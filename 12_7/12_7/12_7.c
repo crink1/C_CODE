@@ -10,14 +10,14 @@ typedef int type;//自定义类型
 //	printf("%d",max);
 //  return 0;
 //}
-int main()
-{	
-	type x = 6;
-	int a = 3;
-	int b = 5;
-	int c = 100;
-	//逗号表达式，从左向右计算，结果为最后一个表达式
-	int d = (a += 2, b = a - 5, c = a + b);
-	printf("%d%d", d, x);
-	return 0;
-}
+//int main()
+//{	
+//	type x = 6;
+//	int a = 3;
+//	int b = 5;
+//	int c = 100;
+//	//逗号表达式，从左向右计算，结果为最后一个表达式
+//	int d = (a += 2, b = a - 5, c = a + b);
+//	printf("%d%d", d, x);
+//	return 0;
+//}
