@@ -83,16 +83,93 @@
 //	return 0;
 //}
 
-void reverse_string(char* string)
+//void reverse_string(char* string)
+//{
+//	
+//
+//}
+//
+//int main()
+//{
+//	char arr[] = "abcdef";
+//	
+//	reverse_string(arr);
+//	return 0;
+//}
+
+
+//int strlenarr(char arr[])
+//{
+//	if (*arr == '\0')
+//	{
+//		return 0;
+//	}
+//	else
+//	{
+//		return 1 + strlenarr(arr + 1);
+//	}
+//}
+//
+//int main()
+//{
+//	char arr[] = "abcdef";
+//
+//	printf("%d", strlenarr(arr));
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	char arr[] = "abcdef";
+//
+//	int i = 0;
+//	while (arr[i] != '\0')
+//	{
+//		
+//		i++;
+//	}
+//	printf("%d", i);
+//	return 0;
+//}
+
+//int jc(int n)
+//{
+//	if (0 == n || 1 == n)
+//	{
+//		return 1;
+//	}
+//	else
+//	{
+//		return jc(n - 1)* n;
+//	}
+//}
+//
+//int main()
+//{
+//	int i = 0, n = 0;
+//	int s = 1;
+//	scanf("%d", &n);
+//	printf("%d", jc(n));
+//	return 0;
+//}
+
+
+int num(int n)
 {
-	printf("%d", sizeof(string));
+	if (n > 9)
+	{
+		num(n / 10);
+	}
+	printf("%d  ", n % 10);
 
 }
 
 int main()
 {
-	char arr[] = "abcdef";
-	
-	reverse_string(arr);
+	int i = 0, n = 0;
+	int s = 1;
+	scanf("%d", &n);
+	num(n);
 	return 0;
 }
