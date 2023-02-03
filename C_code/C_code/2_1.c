@@ -1,6 +1,14 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 
+void menu()
+{
+	printf("1.play");
+	printf("2.exit");
+
+}
+
+
 int main()
 {
 	int input = 0;
@@ -11,14 +19,16 @@ int main()
 		switch (input)
 		{
 			case 1:
+				menu();
 				break;
 			case 0:
+				printf("ÍË³öÓÎÏ·");
 				break;
 			default:
 				printf("Ñ¡Ôñ´íÎó\n");
 				break;
 		}
-	} while (1);
+	} while (input);
 	
 	return 0;
 }
