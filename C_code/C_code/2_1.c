@@ -3,26 +3,36 @@
 
 void menu()
 {
-	printf("1.play");
-	printf("2.exit");
+	printf("1.play\n");
+	printf("0.exit\n");
 
 }
 
+
+void game()
+{
+	char board[3][3];
+	InitBoard(board,3,3);
+
+
+}
 
 int main()
 {
 	int input = 0;
 	do
 	{
-		printf("请输入：");
+		menu();
+		printf("请输入：\n");
 		scanf("%d", &input);
 		switch (input)
 		{
 			case 1:
-				menu();
+				game();
+				printf("三子棋\n");
 				break;
 			case 0:
-				printf("退出游戏");
+				printf("退出游戏\n");
 				break;
 			default:
 				printf("选择错误\n");
