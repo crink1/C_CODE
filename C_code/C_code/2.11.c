@@ -71,19 +71,23 @@
 
 
 
-int main()
-{
+//int main()
+//{
+//
+//	int i = 1;
+//	int x = 2;
+//	int sum = 0;
+//	int n = x;
+//	while (i<=5)
+//	{
+//		sum += n;
+//		n = n * 10 + x;
+//		i++;
+//	}
+//	printf("%d", sum);
+//	return 0;
+//}
 
-	int i = 1;
-	int x = 2;
-	int sum = 0;
-	int n = x;
-	while (i<=5)
-	{
-		sum += n;
-		n = n * 10 + x;
-		i++;
-	}
-	printf("%d", sum);
-	return 0;
-}
+
+
+
